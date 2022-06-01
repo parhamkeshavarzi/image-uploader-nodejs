@@ -1,0 +1,32 @@
+<%- include ('./layouts/header') %> 
+
+<div class="container">
+    
+    <div class="p-5 mb-4 bg-light rounded-3">
+        <div class="container-fluid ">
+            <h2 class="fw-bold"><%= image.original_name %></h2>
+            <p class="fw-2"><%= image.uploaded_at %></p>
+            <div class="d-flex justify-content-center p-5">
+                <div class="input-group">
+                    <span class="input-group-text" id="basic-addon1">Image Link:</span>
+                    <input type="text" class="form-control" value="<%= url %><%= image.path %>">
+                </div>
+            </div>
+            <div class="d-flex justify-content-center">
+                <a href="<%= url %><%= image.path %>">
+                    <img class="bd-placeholder-img bd-placeholder-img-lg img-fluid" src="<%= image.path %>" width="auto" height="auto" role="img"></img>
+                </a>
+            </div>
+            <div class="d-flex justify-content-center mt-5">
+                <form action="/<%= image.file_name %>" method="POST">
+                    <input type="hidden" name="filename" value="<%= image.file_name %>" />
+                    <button type="submit" class="btn btn-danger ml-5">Delete</button>
+                </form>
+            </div>
+        </div>
+      </div>
+
+</div>
+
+    
+<%- include ('./layouts/footer') %> 

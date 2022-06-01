@@ -7,9 +7,9 @@
         <div class="container-fluid py-5">
           <h1 class="display-5 fw-bold">Nodejs based Image Uploader</h1>
           <p class="col-md-8 fs-4">Cillum labore qui enim aliqua et culpa amet.</p>
-          <form action="/" method="POST">
+          <form action="/" method="POST" enctype="multipart/form-data">
             <div class="mb-3 mt-5">
-                <input type="file" class="form-control" id="customFile" accept="image/png, image/jpeg">
+                <input name="img" type="file" class="form-control" id="customFile" accept="image/png, image/jpeg" required>
             </div>
             <div class="mb-3">
                 <button type="submit" class="btn btn-primary">Upload</button>

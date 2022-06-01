@@ -1,1 +1,6 @@
 node_modules
+public/uploads/*.jpg
+public/uploads/*.png
+public/uploads/thumbnails/*.jpg
+tmp/*
+variables.env
