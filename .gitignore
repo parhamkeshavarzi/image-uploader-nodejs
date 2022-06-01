@@ -1,5 +1,6 @@
 node_modules
 public/uploads/*.jpg
+public/uploads/*.jpeg
 public/uploads/*.png
 public/uploads/thumbnails/*.jpg
 tmp/*

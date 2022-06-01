@@ -1,4 +1,27 @@
-# Nodejs Based Imgae Uploader
-[![npm](https://img.shields.io/npm/v/browser-image-compression.svg)](https://www.npmjs.com/package/browser-image-compression)
-[![npm](./coverage/badge.svg)](https://github.com/Donaldcwl/browser-image-compression)
-[![npm](https://img.shields.io/npm/l/browser-image-compression.svg)](https://github.com/Donaldcwl/browser-image-compression)
+# Nodejs Based Image Uploader
+
+A simple image uploader project made by Nodejs and Multer with Mysql DB.
+
+## Usage
+
+### Installation
+
+1- Install the dependencies
+
+```sh
+$ npm install
+```
+
+2- Create "nodejs_image_uploader" database in phpMyAdmin.
+
+3- Import "nodejs_image_uploade.sql" file into the database.
+
+4- Rename "variables.sample.env" to "variables.env"
+
+### Serve
+
+To serve in the browser
+
+```sh
+$ npm start
+```
